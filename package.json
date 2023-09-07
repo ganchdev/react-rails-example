@@ -1,0 +1,22 @@
+{
+  "name": "app",
+  "private": "true",
+  "dependencies": {
+    "esbuild": "^0.19.2",
+    "esbuild-plugin-import-glob": "^0.1.1",
+    "react": "^18.2.0",
+    "react-jazzicon": "^1.0.4",
+    "react_ujs": "^3.1.1"
+  },
+  "scripts": {
+    "build": "esbuild app/javascript/*.* --bundle --sourcemap --outdir=app/assets/builds --public-path=/assets",
+    "build:css": "tailwindcss -i ./app/assets/stylesheets/application.tailwind.css -m -o ./app/assets/builds/tailwind.css"
+  },
+  "devDependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@tailwindcss/container-queries": "^0.1.1",
+    "@tailwindcss/forms": "^0.5.6",
+    "@tailwindcss/typography": "^0.5.9",
+    "daisyui": "^3.6.5"
+  }
+}

@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  height: 100%;
+}
+
+/*
+
+@layer components {
+  .btn-primary {
+    @apply py-2 px-4 bg-blue-200;
+  }
+}
+
+*/
