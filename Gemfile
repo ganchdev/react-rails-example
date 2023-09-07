@@ -31,6 +31,15 @@ gem "terser"
 # generate routes usage: bin/rake js:routes
 gem "js-routes"
 
+# Adds esbuild support to the project
+gem "jsbundling-rails", "~> 1.1"
+
+# Adds tailwind css
+gem "tailwindcss-rails", "~> 2.0"
+
+# Run all the things easier in development
+gem "foreman", "~> 0.87.2"
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
@@ -74,9 +83,3 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
-
-gem "jsbundling-rails", "~> 1.1"
-
-gem "foreman", "~> 0.87.2"
-
-gem "tailwindcss-rails", "~> 2.0"

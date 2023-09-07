@@ -1,24 +1,29 @@
-# README
+# Example Rails project with React
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is an example project which uses the `react-rails` gem with some modern JS tooling to provide a decent developer experience. React components can either be client or server side rendered, and you can install any packages on `npm`.
 
-Things you may want to cover:
+## Requirements:
+- Ruby 3.1
+- NodeJS 16 or greater
+- Yarn
 
-* Ruby version
+## Included in the project:
+- [jsbundling-rails](https://github.com/rails/jsbundling-rails) - adds esbuild to Rails 
+- [react-rails](https://github.com/reactjs/react-rails) - a gem that brings React, adapters and helpers for Rails
+- [mini_racer](https://github.com/rubyjs/mini_racer) - server-renders components 
+- [terser](https://github.com/ahorek/terser-ruby) - uglifier replacement
+- [tailwindcss-rails](https://github.com/rails/tailwindcss-rails) - Tailwind CSS support in Rails
+- [js-routes](https://github.com/railsware/js-routes) - use all named Rails routes in javascript
+- [react-server.js](https://github.com/naft-a/react-rails-example/blob/main/vendor/javascript/react-server.js) - the compiled React js library that is used for SSR when rendering components, it can be found in the react-rails source code 
 
-* System dependencies
+## Notes:
 
-* Configuration
+The overall setup feels clean and straightforward, esbuild was pretty easy to setup and required no real configuration after installing the `jsbundling-rails` gem, literally plug-and-play. I've also included Tailwind CSS in the project as an example, and on top of that I added the [Daisy UI](https://daisyui.com/) plugin to assist with the components on the example pages - all setup in the `tailwind.config.js` files. That's pretty much it!
 
-* Database creation
+### To get started run:
+`bin/setup`
 
-* Database initialization
+### Run all processes in development
+`bin/dev`
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Happy tweaking!
